@@ -43,7 +43,7 @@ Component({
 
   methods: {
     initData(){
-      console.info(`${this.data.name}:start init data`)
+      console.info(`%c [${this.data.name}]`, "color:red", `start init data `)
       this._loadMoreData()
       this.setData({
         initState: true
@@ -55,7 +55,7 @@ Component({
       if (ended) return
 
       const page = this.data.page + 1
-      console.info(`${this.data.name}:load page${page} data `)
+      console.info(`%c [${this.data.name}]`,"color:red", `load page${page} data `)
       this.setData({
         loading: true,
         page
@@ -69,8 +69,9 @@ Component({
       if (!this.data.initState) return
       // if (val.length === oldVal.length) return
       const { total, list } = this.properties
-      console.log(total)
-      console.log(list)
+      console.log(`%c [${this.data.name}]`, "color:red;",`total: ${total}`)
+      console.log(`%c [${this.data.name}]`, "color:red;", `list: `, list)
+      // console.log(list)
       let ended = false
       if (list.length >= total) {
         ended = true
