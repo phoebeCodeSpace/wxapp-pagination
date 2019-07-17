@@ -1,0 +1,9 @@
+<view class="meeting-panel">
+  <view class="panel-header">
+    <text>{{item.theme}}</text>
+  </view>
+  <view class="panel-body">
+    <view>时间：{{item.time}}</view>
+    <view>预约人：{{item.name}}</view>
+  </view>  
+</view>

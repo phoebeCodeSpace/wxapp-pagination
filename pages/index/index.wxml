@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="user-list">
+  <pagination 
+      name="USER"
+      key="{{key}}" 
+      bind:getList="getUserList" 
+      list="{{userList}}" 
+      total="{{userTotal}}"
+      generic:selectable="user-item"
+    >
+  </pagination>
+</view>

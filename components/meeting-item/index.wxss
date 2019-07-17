@@ -1,0 +1,37 @@
+.meeting-panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24rpx;
+  margin-top: 20rpx;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-header text:first-child {
+  color: #000000;
+  font-size: 30rpx;
+}
+
+.panel-header .status {
+  font-size: 28rpx;
+}
+
+.panel-header .status.end {
+  color: #999999;
+}
+
+.panel-header .status.start {
+  color: #44a6ff;
+}
+
+.panel-header .status.doing {
+  color: #e96766;
+}
+
+.panel-body {
+  color: #999999;
+  font-size: 28rpx;
+}

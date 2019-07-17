@@ -1,0 +1,9 @@
+<view class="user-item">
+  <view class="user-left">
+    <view class="user-avator">用户</view>
+    <text>{{item.name}}</text>
+  </view> 
+  <view>
+    {{item.date}}
+  </view>
+</view>

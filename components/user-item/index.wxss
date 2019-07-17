@@ -1,0 +1,23 @@
+.user-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  border-bottom: 1x solid #efefef;
+}
+
+.user-left {
+  flex: 1;
+}
+
+.user-avator {
+  width: 80rpx;
+  height: 80rpx;
+  display: inline-block;
+  vertical-align: middle;
+  background: #ccc;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80rpx;
+  margin-right: 20rpx;
+}

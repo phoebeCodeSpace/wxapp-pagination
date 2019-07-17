@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-tab": "/vant-weapp/lib/tab/index",
+    "van-tabs": "/vant-weapp/lib/tabs/index",
+    "pagination":"/components/pagination/index",
+    "meeting-item":"/components/meeting-item/index"
+  }
+}

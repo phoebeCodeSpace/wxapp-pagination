@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/meetings/index"
+  ],
+  "tabBar": {
+      "color": "#666",
+      "selectedColor": "#44a6ff",
+      "backgroundColor": " #f7f7fa",
+      "positon": "top",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "用户"
+        },
+        {
+         "pagePath": "pages/meetings/index",
+          "text": "会议"
+        }
+      ]
+    },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

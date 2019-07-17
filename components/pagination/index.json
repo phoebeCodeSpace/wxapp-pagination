@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "componentGenerics": {
+    "selectable": true
+  },
+  "usingComponents": {
+    "loading": "/vant-weapp/dist/loading/index"
+  }
+}

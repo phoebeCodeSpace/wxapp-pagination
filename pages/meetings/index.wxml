@@ -1,0 +1,35 @@
+<!--userMeetings.wxml-->
+<view>
+  <van-tabs sticky swipeable animated  tab-active-class="tab-active"
+    active="{{currentTab}}" bind:change="onChange">
+    <van-tab title="我的会议" data-key="{{type['JOIN']}}">
+      <view class="meeting-list">
+          <pagination 
+            name="JOIN"
+            init-immediately="{{currentTab==type['JOIN']}}"
+            key="{{joinKey}}" 
+            bind:getList="getJoinMeetings" 
+            list="{{joinMeetings}}" 
+            total="{{joinTotal}}"
+            generic:selectable="meeting-item"
+          >
+          </pagination>
+      </view>
+    </van-tab>
+
+    <van-tab title="我的预约">
+      <view class="meeting-list">
+        <pagination 
+          name="BOOK"
+          init-immediately="{{currentTab==type['BOOK']}}"
+          key="{{bookKey}}"
+          bind:getList="getBookMeetings"
+          list="{{bookMeetings}}"
+          total="{{bookTotal}}"
+          generic:selectable="meeting-item"
+        >
+        </pagination>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

@@ -1,0 +1,3 @@
+.meeting-list {
+  margin: 20rpx;
+}

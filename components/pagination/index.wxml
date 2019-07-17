@@ -1,0 +1,6 @@
+<view>
+  <view wx:for="{{list}}" wx:for-item="item" wx:key="index">
+    <selectable item="{{item}}"></selectable>
+  </view>
+  <loading wx:if="{{loading}}" custom-class="loading"></loading>
+</view>
